@@ -23,7 +23,8 @@ public class Barang {
         stok = stok+n;
     }
     void kurangiStok(int n){
-        stok = stok-n;
+        if(n > 0)
+            stok -= n;
     }
     int hitungHargaTotal(int jumlah){
         return jumlah+hargaSatuan;
